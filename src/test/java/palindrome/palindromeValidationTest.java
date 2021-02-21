@@ -3,7 +3,8 @@ package palindrome;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static palindrome.PalindromeValidation.*;
 
 class palindromeValidationTest {
@@ -11,7 +12,7 @@ class palindromeValidationTest {
     private static String palindrome, notPalindrome, palindromeWithSpaces;
 
     @BeforeAll
-    public static void setup(){
+    public static void setup() {
         palindrome = "aibofobia";
         notPalindrome = "calopsita";
         palindromeWithSpaces = " aibo f obia ";

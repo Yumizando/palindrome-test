@@ -5,6 +5,7 @@ import java.util.function.Function;
 
 /**
  * Class responsible for implementing the verification of palindromes
+ *
  * @author Laryssa Yumi - laryyumi@gmail.com
  */
 public class PalindromeValidation {
@@ -18,11 +19,12 @@ public class PalindromeValidation {
     /**
      * <p>Method that checks whether a word is a palindrome or not.
      * </p>
+     *
      * @param word word to be verified
      * @return message confirming whether it is palindrome or not
      * @since 1.0
      */
-    public static String verifyIfStringIsPalindrome(String word){
+    public static String verifyIfStringIsPalindrome(String word) {
         String reversedWord = reverse.apply(word);
 
         if (reversedWord.equals(word)) {
@@ -37,16 +39,17 @@ public class PalindromeValidation {
      * If the comparison is case sensitive, the string is not modified, otherwise it is changed to uppercase.
      * If the comparison is without spaces, the string must be returned without spaces, otherwise it will not be modified.
      * </p>
-     * @param word word to be verified
+     *
+     * @param word            word to be verified
      * @param isCaseSensitive signals whether the comparison is case sensitive
-     * @param hasSpace signals whether the comparison should include spaces
+     * @param hasSpace        signals whether the comparison should include spaces
      * @return string modified according to the comparison arguments.
      * @since 1.0
      */
-    public static String prepareString(String word, boolean isCaseSensitive, boolean hasSpace){
+    public static String prepareString(String word, boolean isCaseSensitive, boolean hasSpace) {
         String convertedString = word;
 
-        if(!isCaseSensitive){
+        if (!isCaseSensitive) {
             convertedString = convertedString.toUpperCase();
         }
 
