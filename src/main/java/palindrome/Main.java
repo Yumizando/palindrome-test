@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static palindrome.PalindromeValidation.prepareString;
 import static palindrome.PalindromeValidation.verifyIfStringIsPalindrome;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
