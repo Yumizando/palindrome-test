@@ -14,6 +14,12 @@ public class PalindromeValidation {
 
     public static final String ITS_NOT_PALINDROME_MESSAGE = "A string não é um palíndromo.";
 
+    /**
+     * <p>Function that reverses the string.
+     * </p>
+     *
+     * @since 1.0
+     */
     private static final Function<String, String> reverse = word -> new StringBuilder(word).reverse().toString();
 
     /**
