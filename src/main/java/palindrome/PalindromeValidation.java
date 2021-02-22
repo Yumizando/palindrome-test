@@ -14,7 +14,7 @@ public class PalindromeValidation {
 
     public static final String ITS_NOT_PALINDROME_MESSAGE = "A string não é um palíndromo.";
 
-    static Function<String, String> reverse = word -> new StringBuilder(word).reverse().toString();
+    private static final Function<String, String> reverse = word -> new StringBuilder(word).reverse().toString();
 
     /**
      * <p>Method that checks whether a word is a palindrome or not.
@@ -25,7 +25,7 @@ public class PalindromeValidation {
      * @since 1.0
      */
     public static String verifyIfStringIsPalindrome(String word) {
-        String reversedWord = reverse.apply(word);
+        final String reversedWord = reverse.apply(word);
 
         if (reversedWord.equals(word)) {
             return ITS_PALINDROME_MESSAGE;

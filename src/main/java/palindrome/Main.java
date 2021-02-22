@@ -10,9 +10,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Insira a palavra a ser verificada:");
-
-        String inputWord = scanner.nextLine();
+        String inputWord = "";
+        do {
+            System.out.println("Insira a palavra a ser verificada:");
+            inputWord = scanner.nextLine();
+        } while (inputWord.equals(""));
 
         System.out.println("A comparação deve ser case sentitive?");
         System.out.println("1 para sim / 2 para não ");
